@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import movie.bbb.이동테스트;
+import movie.cc.OutfitMain;
+
  
 public class Main {
 	
@@ -12,6 +15,15 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		
+		//옷입기 클래스 실행
+		OutfitMain.Outfit();
+		
+		//이동 클래스 실행
+		이동테스트.moveMain();
+		
+		
+		
+		//영화관 클래스 시작
 		영화관 movie = new 영화관();
 		
 		
