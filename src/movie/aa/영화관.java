@@ -59,13 +59,23 @@ public class 영화관 {
 			System.out.println("시간: " + reservedTicket.get시간());
 			System.out.println("좌석: " + reservedTicket.get좌석());
 
-			int timeSpent = goToBuySnack();
-			if (timeSpent > 지각기준분) {
-				System.out.println("스낵 구매로 " + timeSpent + "분이 소요되어 지각했지만, 이미 확정된 좌석 예매는 유지됩니다.");
-			} else {
-				System.out.println("스낵 구매 후 " + timeSpent + "분 만에 입장했습니다. 예매된 좌석으로 바로 착석하면 됩니다.");
+			
+			//매점 여부 선택
+			System.out.println("영화관 입장 전, 매점에 도착했습니다. 1. 매점 가기 2.가지 말기");
+			if(sc.nextInt()==1) {
+				int timeSpent = goToBuySnack();
+				if (timeSpent > 지각기준분) {
+					System.out.println("스낵 구매로 " + timeSpent + "분이 소요되어 지각했지만, 이미 확정된 좌석 예매는 유지됩니다.");
+				} else {
+					System.out.println("스낵 구매 후 " + timeSpent + "분 만에 입장했습니다. 예매된 좌석으로 바로 착석하면 됩니다.");
+				}
 			}
+			
+			
 
+			
+			
+			
 			if (!계속진행여부()) {
 				break;
 			}
