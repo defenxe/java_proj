@@ -2,14 +2,16 @@ package movie.cc;
 
 public class Clothing {
 	
-	String customer; //고객번호
-	String type; // 상의, 하의, 신발
+	String type; 
+	String clothes; 
 	
-	//생성자
-	
-	public Clothing(String customer, String type){
-		this.customer=customer;
+	public Clothing(String clothes, String type){
+		this.clothes=clothes;
 		this.type=type;
+	}
+	
+	void info() {
+		System.out.println(clothes + " : " + type);
 	}
 
 }
