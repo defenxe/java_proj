@@ -2,7 +2,7 @@ package movie.bbb;
 
 import java.util.Scanner;
 
-public class 이동테스트 {
+public class 이동수단Main {
 	
 	public static void moveMain() {
 		
@@ -10,11 +10,11 @@ public class 이동테스트 {
         
         이동수단 transport = null; 
         
-        System.out.println("=== 이동수단 다형성 검증 테스트 ===");
+        System.out.println("\n == 이동수단 ==");
         
         while (true) {
             System.out.println("\n영화관으로 이동할 수단을 선택하세요.");
-            System.out.println("1. 택시  2. 대중교통  3. 도보  0. 테스트 종료");
+            System.out.println("1. 택시  2. 대중교통  3. 도보  0. 선택하지 않음");
             System.out.print("선택: ");
             
            
@@ -27,7 +27,7 @@ public class 이동테스트 {
             int choice = sc.nextInt();
             
             if (choice == 0) {
-                System.out.println("테스트를 종료합니다.");
+                System.out.println("이동수단을 선택하지 않습니다.");
                 break;
             } else if (choice == 1) {
                 transport = new 택시("택시"); 
@@ -43,7 +43,10 @@ public class 이동테스트 {
             if (transport != null) {
                 System.out.print("이동 결과: ");
                
-                transport.이동하다(); 
+                transport.이동하다();
+                
+                //이동수단에서 영화관 class로 넘어가게 하기 위해 추가
+                break;
             }
         }
         
