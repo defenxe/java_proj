@@ -1,7 +1,9 @@
 package movie.cc;
 
+import java.util.List;
+
 public interface Outfit {
 	
-	public void recommend();
+	public List<String> recommend(String gender);
 
 }
