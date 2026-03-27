@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import movie.bbb.이동테스트;
+import movie.bbb.이동수단Main;
 import movie.cc.OutfitMain;
 
  
@@ -19,7 +19,7 @@ public class Main {
 		OutfitMain.Outfit();
 		
 		//이동 클래스 실행
-		이동테스트.moveMain();
+		이동수단Main.moveMain();
 		
 		
 		
