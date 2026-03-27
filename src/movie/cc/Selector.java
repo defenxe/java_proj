@@ -1,6 +1,6 @@
 package movie.cc;
 
-public interface Outfit {
+public interface Selector {
 	
 	public void recommend();
 

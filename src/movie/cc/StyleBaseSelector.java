@@ -2,7 +2,7 @@ package movie.cc;
 
 import java.util.Scanner;
 
-public class StyleBaseSelector implements Outfit{
+public class StyleBaseSelector implements Selector{
 
 	@Override
 	public void recommend() {

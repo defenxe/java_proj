@@ -2,7 +2,7 @@ package movie.cc;
 
 import java.util.Scanner;
 
-public class GenderBaseSelector implements Outfit{
+public class GenderBaseSelector implements Selector{
 
 	@Override
 	public void recommend() {

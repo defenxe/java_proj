@@ -2,7 +2,7 @@ package movie.cc;
 
 import java.util.Scanner;
 
-public class WeatherBaseSelector implements Outfit{
+public class WeatherBaseSelector implements Selector{
 	 
 
 	 @Override

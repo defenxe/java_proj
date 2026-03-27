@@ -15,7 +15,7 @@ public class OutfitMain {
 		//System.out.print("성별 입력(남자/여자) : ");
         int choice = sc.nextInt();
         
-        Outfit selector = null;
+        Selector selector = null;
 
         if (choice == 1) {
             selector = new WeatherBaseSelector();
